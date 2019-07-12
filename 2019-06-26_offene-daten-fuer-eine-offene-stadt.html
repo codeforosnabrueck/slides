@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Offene Daten für eine offene Stadt</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="cfg-theme.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+<style>
+        .reveal.slide .slides > section, .reveal.slide .slides > section > section {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  align-items: center !important;
+}
+section > h3, section > h3 {
+  position: absolute !important;
+  top: 1em !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}
+.print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
+  min-height: 770px !important;
+  position: relative !important;
+}
+
+</style>
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" >
+				<section class="frontslide left" data-background="img/jugendhackt/background.png">
+                    <h1>Offene Daten für <br>eine offene Stadt</h1>
+                    <p>Julia, Code for Osnabrück</p>
+				</section>
+
+                <aside class="notes">Julia, Initiative Code for Osnabrück zwar nicht mitgegründet, aber kurz nach der Gründung dazugestoßen. Aktuell das Mitglied, das am längsten aktiv ist. Code for = internationales Netzwerk. Wir arbeiten dezentral. Auch aktiv auf nationaler Ebene und schon zu Gast beim Code for America Summit</aside>
+
+                <section>
+                     <section>
+                        <h2>Code for what?!</h2>
+                    </section>
+
+                    <section>
+                        <h3>Was ist Code for Germany?</h3>
+                        <span class="fragment">
+                        <img src="img/codefor.png">  
+                        <p id="footer">https://codefor.de/code-of-conduct/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Die Open Knowledge Foundation</h3>
+                        <span class="fragment">
+                            <img src="img/okfn.png">
+                            <p id="footer">https://okfn.de/</p>
+                        </span>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                    <h2>Offene Daten</h2>
+                    
+                    </section>
+					<section>
+						<h3>Was sind offene Daten?</h3>
+                          <p class="fragment">"Offene Daten sind Daten, die von jedermann frei benutzt, weiterverwendet und geteilt werden können - die einzige Einschränkung betrifft die Verpflichtung zur Nennung des Urherbers."</p>
+                        <p class="fragment" style="font-style:italic;">opendatahandbook.org</p>
+
+					</section>
+
+                    <section>
+                        <img src="img/open-data-levels-tursics.png">
+                        <p id="footer">Erstellt von Thomas Tursics, veröffentlicht unter CC-BY 4.0,<br>https://www.slideshare.net/thomastursics/jugend-hackt-open-data</p>
+                    </section>
+
+                    <section>
+                        <h3>Offen?</h3>
+                        <div>
+                        <ol style="font-size:1em; -moz-columns: 2;">
+                            <li class="fragment">Vollständig</li>
+                            <li class="fragment">Original</li>
+                            <li class="fragment">Zeitnah</li>
+                            <li class="fragment">Zugänglich</li>
+                            <li class="fragment">Maschinenlesbar</li>
+                            <li class="fragment">Diskriminierungsfrei</li>
+                            <li class="fragment">Offen standardisiert</li>
+                            <li class="fragment">Lizenzfrei</li>
+                            <li class="fragment">Dauerhaft</li>
+                            <li class="fragment">Kostenfrei</li>
+                        <ol>
+                        </div>
+                        <div>
+                        <p class="fragment" id="footer">Sunlight Foundation: Ten Principles for Opening Up Government Data, https://sunlightfoundation.com/wp-content/uploads/2016/11/Ten-Principles-for-Opening-Up-Government-Data.pdf</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Worum geht's genau?</h2>
+                    </section>
+
+                    <section>
+                        <span class="fragment"> 
+                           <img src="img/open-data.png">
+                           <p style="font-size: 0.5em;">http://www.open3.at/grundlagen/um-welche-daten-geht-es</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Was sind offene Daten <strong>nicht</strong>?</h3>
+                        <p class="fragment">Personenbezogene Daten!</p>
+                        <p class="fragment" style="text-decoration:line-through;">Urheberrechtlich geschützte Daten.</p>
+					</section>
+
+                    <section>
+                        <h3>Glyphosat-Gutachten</h3>
+                        <img class="fragment" src="img/glyphosat-gutachten.png">
+                        <p class="fragment" id="footer">https://fragdenstaat.de/aktionen/zensurheberrecht-2019/</p>
+                    </section>
+
+                    <section>
+                        <h2>Was geht mich das an?</h2>
+                    
+                    </section>
+
+                    <section>
+                        <h3>Demokratische Kontrolle !</h3>
+                        <span class="fragment">
+                            <img src="img/where-does-my-money-go.png">
+                            <p id="footer">http://app.wheredoesmymoneygo.org/</p>
+                        </span>
+
+                    </section>
+
+                    <section>
+                        <h3>Partizipation !</h3>
+                        <span class="fragment">
+                            <img src="img/muenchen-transparent.png">
+                            <p id="footer">https://muenchen-transparent.de/</p>
+                        </span>
+                    </section>
+
+<!-- 
+                    <section>
+                        <h3>Befähigung !</h3>
+                        <span class="fragment">
+                            <img src="img/clear-my-record.png">
+                            <p id="footer">https://www.clearmyrecord.org/</p>
+                        </span>
+                    </section>
+-->
+                    <section>
+                        <h3>Befähigung !</h3>
+                        <span class="fragment">
+                            <img src="img/wheelmap.png">
+                            <p id="footer">https://www.wheelmap.org/</p>
+                        </span>
+                    </section>
+
+
+                    <section>
+                        <h3>Service !</h3>
+                        <span class="fragment">
+                            <img src="img/servicemap-hel-fi.png">
+                            <p id="footer">https://servicemap.hel.fi</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Ressourcen schonen!</h3>
+                        <span class="fragment">
+                            <img src="img/trinkwasser.png">
+                            <p id="footer">https:trinkwasser.codefor.de</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Gesundheit !</h3>
+                        <span class="fragment">
+                            <img src="img/chicagoflushots.png">
+                            <p id="footer">https://chicagoflushots.org/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Orientierung !</h3>
+                        <span class="fragment">
+                            <img src="img/weihnachtsmarkt-münster.png">
+                            <p id="footer">http://codeformuenster.org/weihnachtsmarkt/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Gedenkkultur !</h3>
+                        <span class="fragment">
+                            <img src="img/stolpersteine-bonn.png">
+                            <p id="footer">https://stolpersteine.codeforbonn.de/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Bessere Behördendienstleistungen !</h3>
+                        <span class="fragment">
+                            <img src="img/courtbot.png">
+                            <p id="footer">https://www.okcourtbot.com</p>
+                        </span>
+                    </section>
+
+
+                    <section>
+                        <h3>Mehr Zeit !</h3>
+                        <span class="fragment">
+                            <img src="img/wartezeiten-moers.png">
+                            <p id="footer">http://wartezeit.tursics.de/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Lebenswerte Stadt !</h3>
+                        <span class="fragment">
+                            <img src="img/mein-münster.png">
+                            <p id="footer">https://mein-ms.de/#es2</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Wo gibt es offene Daten?</h3>
+                        <p class="fragment" style="font-size:3em; font-style: italic;">Im Internet!</p>
+                    </section>
+
+                    <section>
+                        <h3>Open-Data-Portale</h3>
+                        <span class="fragment">
+                            <img src="img/open-data-atlas.png">
+                            <p id="footer">http://opendata.tursics.de/?page=Data&level=all&dataset=portals&country=DE&lat=51.0777&lng=10.1433&zoom=6</p>
+                    </section>
+
+                    <section>
+                        <h3>KOSMOS</h3>
+                        <span class="fragment">
+                            <img src="img/kosmos-osnabrück.png">
+                            <p id="footer">https://geo.osnabrueck.de/kosmos/ziel_1/atlas.html?select=Stadtgrenze</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Geodatenportal</h3>
+                        <span class="fragment">
+                            <img src="img/geodatenportal-osnabrück.png">
+                            <p id="footer">https://geo.osnabrueck.de/geodatenportal/?p=kartendienste</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Informationsfreiheit</h3>
+                        <ol style="font-size:0.7em;">
+                            <li class="fragment"><special>keine gesetzliche Regelung</special> </li>
+                            <p  class="fragment"style="font-size:0.6em;"> Bayern, Niedersachsen, Sachsen</p>
+                            <li class="fragment"><special> Informationsfreiheitsgesetz:</special> <br>Informationen müssen auf Antrag herausgegeben werden
+                            <p  class="fragment"style="font-size:0.6em;">Baden-Württemberg, Berlin, Brandenburg, Hessen, Mecklenburg-Vorpommern, Nordrhein-Westfalen, Saarland, Sachsen-Anhalt, Schleswig-Holstein, Thüringen</li>
+                            <li class="fragment"><special>Transparenzgesetz:<br></special> Behörden veröffentlichen zentrale Daten eigenständig </li>
+                            <p class="fragment" style="font-size:0.6em;">Bremen, Hamburg, Rheinland-Pfalz</p>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h3>Schlusslicht Niedersachsen</h3>
+                        <span class="fragment">
+                        <img src="img/ifg-deutschland.png">
+                        <p id="footer">https://media.ccc.de/v/c4.openchaos.2019.05.fragdenstaat#t=731</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>...auch in Europa</h3>
+                        <span class="fragment">
+                        <img src="img/ifg-europa.png">
+                        <p id="footer">https://media.ccc.de/v/c4.openchaos.2019.05.fragdenstaat#t=758</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Welche Daten gibt es?</h3>
+                        <span class="fragment">
+                            <img src="img/govdata.png">
+                            <p id="footer">https://govdata.de/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>fragdenstaat.de</h3>
+                        <span class="fragment">
+                            <img src="img/fragdenstaat.png">
+                            <p id="footer">https://fragdenstaat.de</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Offene Kartendaten</h3>
+                        <span class="fragment">
+                            <img src="img/openstreetmap.png">
+                            <p id="footer">https://openstreetmap.org</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Wikidata</h3>
+                        <span class="fragment">
+                            <img src="img/wikidata.png">
+                            <p id="footer">https://www.wikidata.org/wiki/Wikidata:Main_Page</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Deutsche Bahn</h3>
+                        <span class="fragment">
+                            <img src="img/data-deutschebahn.png">
+                            <p id="footer">https://data.deutschebahn.com/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Datenguide</h3>
+                        <span class="fragment">
+                            <img src="img/datenguide.png">
+                            <p id="footer">https://datengui.de/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>NASA Open Data</h3>
+                        <span class="fragment">
+                            <img src="img/nasa-open-data.png">
+                            <p id="footer">https://data.nasa.gov/</p>
+                        </span>
+                    </section>
+				</section>
+
+
+                <section>
+                    <section>
+                        <h2>Transparenz</h2>
+                    </section>
+
+                    <section>
+                        <h3>Transparenz ?</h3>
+                        <span class="fragment">
+                            <img src="img/landschaftsschutzgebiete-wuppertal.png">
+                            <p id="footer">Landschaftsschutzgebiete Wuppertal</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Transparenz !</h3>
+                        <span class="fragment">
+                            <img src="img/datenwaben-wuppertal.png">
+                            <p id="footer">http://datenwaben.de/index.html?city=wuppertal&page=cards</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Was heißt Transparenz?</h3>
+                        <span class="fragment">
+                        <img src="img/transparenz-niedersachsen.png">
+                        <p id="footer">https://transparenzranking.de/laender/niedersachsen/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Was heißt Transparenz?</h3>
+                        <span class="fragment">
+                        <img src="img/transparenz-hamburg.png">
+                        <p id="footer">https://transparenzranking.de/laender/hamburg/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h2>Wer sorgt für Transparenz?</h2>
+                    </section>
+
+                    <section>
+                        <h3>Datenjournalismus</h3>
+                        <span class="fragment">
+                            <img src="img/morgenpost-schulfinder.png">
+                            <p id="footer">https://interaktiv.morgenpost.de/schul-finder-berlin/#/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Open Knowledge Foundation</h3>
+                        <span class="fragment">
+                            <img src="img/sehrgutachten.png">
+                            <p id="footer">https://sehrgutachten.de/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Code for Germany</h3>
+                        <span class="fragment">
+                            <img src="img/code-for-de-projekt.png">
+                            <p id="footer">https://codefor.de/projekte/2018-20-06-direktvermarkter-karte.html</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Code for America</h3>
+                        <span class="fragment">
+                            <img src="img/code-for-america-jobs.png">
+                            <p id="footer">https://jobs.codeforamerica.org/search</p>
+                        </span>
+                    </section>
+
+
+                </section>
+                 <section>
+
+
+
+                    <section>
+                        <h2>Civic Tech ?!</h2>
+                    </section>
+
+
+                    <section>
+                        <h3>Technik für die Gesellschaft</h3>
+                        <span class="fragment">
+                            <img src="img/food-4-thought.png">
+                            <p id="footer">https://summer-meals.herokuapp.com/#findfood</p>
+                        </span>
+                    </section>
+
+
+                    <section>
+                        <h3>Technik für eine lebenswertere Welt</h3>
+                        <span class="fragment">
+                        <img src="img/adopt-a-drain.png">
+                        <p id="footer">https://adoptadrain.sfwater.org/</p>
+                        </span>
+                    </section>
+
+                    <section>
+                        <h3>Bildung !</h3>
+                        <span class="fragment">
+                            <img src="img/schulsanierung-berlin.png">
+                            <p id="footer">http://schulsanierung.tursics.de/</p>
+                        </span>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Und was heißt das jetzt?</h2>
+                    </section>
+
+                    <section>
+                        <h3>Auf einen Blick:</h3>
+                        <ol>
+                            <li>Offene Daten sind Daten, die frei benutzt, verwendet und verbreitet werden dürfen.</li>
+                            <li>Öffentliche Daten sind <strong>nicht</strong> das Öl des 21. Jahrhunderts, sondern eher das Grundwasser.</li>
+                            <li>Offene Daten können dazu beitragen, unseren Alltag ein bisschen besser zu machen und sind die Zukunft der Stadtentwicklung.</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Und jetzt?</h2>
+                    </section>
+
+                    <section>
+                        <h3>To Do</h3>
+                        <ol>
+                            <li class="fragment">Stellt Informationsfreiheitsanfragen.</li>
+                            <li class="fragment">Kommt bei uns vorbei.</li>
+                            <li class="fragment">Lauft mit offenen Augen und Ohren durch die Welt – und lasst euch dabei keinen Blödsinn erzählen!</li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h3>Code for Osnabrück</h3>
+                        <ol>
+                            <li class="fragment">Nächstes Treffen: 23. Juli, 20 Uhr, Rosengroup (Berghoffstraße 11)</li>
+                            <li class="fragment">Website: codeforosnabrueck.org</li>
+                            <li class="fragment">Twitter: @codeforosna</li>
+                            <li class="fragment">Mail: osnabrueck@codefor.de</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>DANKE!</h2>
+                        <p style="font-size:0.5em">Made with <a href="https://github.com/hakimel/reveal.js">reveal.js</a> (MIT license, <a href="https://hakim.se">Hakim El Hattab</a>)</p>
+                        <p style="font-size:0.5em">Made by <a href="https://github.com/joliyea">joliyea</a> (License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
+                    </section>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+            });
+
+		</script>
+
+<!-- including fixed header and footers --> 
+
+    <style type="text/css">
+    /* 1. Style header/footer <div> so they are positioned as desired. */
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+    }
+</style>
+
+<!-- 2. Create hidden header/footer <div> -->
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <!--        <div id="header-left">HEADER-LEFT</div> -->
+        <!--        <div id="header-right">HEADER-RIGHT</div> -->
+        <div id="footer-left">
+        <img src="img/cfo-logo-square.png" style="width:90px;height:80px;">
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
+	</body>
+</html>
+
